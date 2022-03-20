@@ -1,0 +1,168 @@
+// variable
+
+$bordes: rgb(255, 92, 88);
+
+
+
+
+
+
+.menuFlex{
+    
+    display: flex;
+    height: 100%;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: flex-end ;
+       
+}
+.perfilFlex{
+    
+    display: flex;
+    height: 100%;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-end;
+    align-items: flex-end ;
+       
+}
+
+
+.menuBoxModeling li {
+    padding: 0% 7%;
+    font-weight: bold;
+    
+        
+}
+
+.perfilBoxModeling li {
+    padding: 0% 20px 0% 0%;
+    font-weight: bold;
+}
+
+
+.flexTienda {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 5px 0px;
+    padding-bottom: 5px;
+    border-bottom:ridge 2px $bordes ;
+
+}
+
+    //EXTEND 
+    /* eXTEND */
+
+.bordeHogar {
+    border: 3px dashed rgb(170, 155, 145) ;
+    margin: 15px 0%; 
+
+        &:hover{
+
+            border: 10px solid rgb(240, 153, 103)    
+                
+        }
+        
+
+    
+    
+        
+
+}
+
+.bordeBasar {
+    @extend .bordeHogar;
+
+        &:hover{
+            border: 10px solid #f5dea6;
+        }
+}
+
+
+.bordeDeporte {
+    @extend .bordeHogar;
+
+        &:hover{
+            border: 10px solid #C0D8C0 ;
+        }
+     
+    
+}
+.bordeCrea {
+    @extend .bordeHogar;
+
+        &:hover{
+            border: 10px solid #BB6464 ;
+        }
+    
+    
+}
+
+
+
+
+.imagenCuadro{
+    margin: 30px;
+    border: solid 3px $bordes;
+
+}
+
+
+.tituloH {
+    font-style: italic;
+}
+
+
+
+
+            /* Ids */
+
+
+            
+#redes {
+    display: flex;
+    height: 100%;
+    flex-wrap: nowrap;
+    justify-content: space-around; 
+    align-items: center; 
+}
+
+
+#titulo {
+    
+    font-family: "zaha";
+    font-size: 60px;
+    font-weight:normal;
+    padding: 30px 0px 0px 0px;
+}
+
+
+
+#subTitulo {
+    
+    font-family: "zaha";
+    font-size: 12px;
+    padding-left: 34px;
+}
+
+
+.inisioSesion {
+    border: #BB6464 2px solid;
+    border-radius: 5px;
+    width: 300px;
+    height: 400px;
+    justify-content: center;
+    margin: 150px auto 200px auto;
+    padding: 5px;
+
+
+}
+
+.bodySesion{
+    text-align: center;
+
+}
+

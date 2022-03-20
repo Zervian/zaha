@@ -1,0 +1,238 @@
+
+#gridArea {
+    display: grid;
+    grid-template-areas: 
+    
+    "header header "
+    "novedades novedades "
+    "elementos elementos "
+    "productos productos2 " 
+    "footer footer "
+    ;
+
+    grid-template-columns: 50% 50%;
+    grid-template-rows:  auto;
+
+}
+
+.header {
+    grid-area: header;
+}
+
+.novedades {
+    grid-area: novedades;
+    background-color: wheat;    
+    padding-bottom: 20px;
+    padding-top: 30PX; 
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    margin-top: 5px;
+}
+
+.elementos {
+    grid-area: elementos;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 20px 80px 20px;
+    margin: 0% 10%;
+   
+
+}
+
+.productos {
+    grid-area: productos ;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+}
+
+.productos2 {
+    grid-area: productos2 ;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+    
+}
+
+
+                                /* Grid nosotros */
+
+
+#gridAreaNosotros {
+    display: grid;
+    grid-template-areas:
+
+    "header"
+    "contenido"
+    "footer"
+    
+    
+    ;
+    grid-template-columns: 100%;
+    grid-template-rows: auto 5fr auto;
+
+}
+
+.contenido {
+    grid-area: contenido;
+    justify-content: center;
+    text-align: center;
+    margin-top: 10px;
+
+    }
+
+.historia {
+    background-color: wheat;
+    height: 100%;
+    margin: 10px 0px 100px 0px;
+    width: 80%;
+    display: inline-block;
+
+}
+
+
+                                /*  grids en tienda */
+
+
+#gridAreaTienda {
+    display: grid;
+    grid-template-areas:
+    "header"
+    "accesorios"
+    "lamparas"
+    "posavaso"
+    
+    
+    ;
+    grid-template-columns: 100%;
+    grid-template-rows: 1fr ;
+
+  
+    column-gap: 5%;
+
+
+}
+
+.accesorios {
+    grid-area: accesorios;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    }
+
+.lamparas {
+    grid-area: lamparas; 
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.posavaso {
+    grid-area: posavaso;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.margen {
+    margin-bottom: 5px;
+} 
+
+
+
+
+                                            /* grids contacto  */
+
+.contactoFondo {
+    background-color: wheat;
+}
+
+
+#gridAreaContacto {
+  
+    display: grid;
+    grid-template-areas:
+        "header"
+        "form"
+        "ubi"
+        "tiendas"
+        "footer"
+        
+        ;
+        grid-template-columns: 100%;
+        grid-template-rows: 1fr;
+
+}
+
+.form {
+    grid-area: form;
+    display: flex;
+    justify-content: center;
+    margin: 20px 0% 50px 0%;
+}
+
+
+.ubi {
+    grid-area: ubicacion;
+    text-align: center;
+    margin: 50px 0% 50px 0%;
+}
+
+.tiendas {
+    grid-area: tiendas;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 100px;
+}
+
+
+
+
+
+
+
+                                 /* grids carro */
+
+
+
+
+
+
+.bordeCarrito {
+border: #BB6464 1px solid;
+margin: 2%;
+display: inline-block;
+
+}
+
+.CarritoFlex {
+display: flex;
+justify-content: space-around;
+flex-wrap: wrap;
+
+}
+
+#gridAreaCarro {
+
+    grid-template-areas: 
+    
+    "header"
+    "compras"
+    "footer"
+    
+    ;
+
+    grid-template-columns: 100%;
+    grid-template-rows: auto auto auto;
+}
+
+.compras {
+    grid-area: compras;
+}
+

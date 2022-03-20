@@ -1,0 +1,18 @@
+.headerAnime {
+    animation-name: encabezado;
+    animation-iteration-count: 1 ;
+    animation-duration: 4s;
+    
+}
+
+@keyframes encabezado {
+    from{        
+          transform: translatey(-200px); 
+          opacity: 0;          
+        }
+
+    to{
+        transform: translate(0px); 
+        opacity: 1;                
+    }
+}

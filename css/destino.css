@@ -1,0 +1,462 @@
+/* comentario de bloque que aparece tambien en css */
+.menuFlex {
+  display: flex;
+  height: 100%;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.perfilFlex {
+  display: flex;
+  height: 100%;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+
+.menuBoxModeling li {
+  padding: 0% 7%;
+  font-weight: bold;
+}
+
+.perfilBoxModeling li {
+  padding: 0% 20px 0% 0%;
+  font-weight: bold;
+}
+
+.flexTienda {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: 5px 0px;
+  padding-bottom: 5px;
+  border-bottom: ridge 2px #ff5c58;
+}
+
+/* eXTEND */
+.bordeHogar, .bordeCrea, .bordeDeporte, .bordeBasar {
+  border: 3px dashed #aa9b91;
+  margin: 15px 0%;
+}
+.bordeHogar:hover, .bordeCrea:hover, .bordeDeporte:hover, .bordeBasar:hover {
+  border: 10px solid #f09967;
+}
+
+.bordeBasar:hover {
+  border: 10px solid #f5dea6;
+}
+
+.bordeDeporte:hover {
+  border: 10px solid #C0D8C0;
+}
+
+.bordeCrea:hover {
+  border: 10px solid #BB6464;
+}
+
+.imagenCuadro {
+  margin: 30px;
+  border: solid 3px #ff5c58;
+}
+
+.tituloH {
+  font-style: italic;
+}
+
+/* Ids */
+#redes {
+  display: flex;
+  height: 100%;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  align-items: center;
+}
+
+#titulo {
+  font-family: "zaha";
+  font-size: 60px;
+  font-weight: normal;
+  padding: 30px 0px 0px 0px;
+}
+
+#subTitulo {
+  font-family: "zaha";
+  font-size: 12px;
+  padding-left: 34px;
+}
+
+.inisioSesion {
+  border: #BB6464 2px solid;
+  border-radius: 5px;
+  width: 300px;
+  height: 400px;
+  justify-content: center;
+  margin: 150px auto 200px auto;
+  padding: 5px;
+}
+
+.bodySesion {
+  text-align: center;
+}
+
+@font-face {
+  font-family: zaha;
+  src: url(../fuentes/static/OpenSans/OpenSans-Light.ttf);
+}
+@font-face {
+  font-family: cuerpo;
+  src: url(../fuentes/static/OpenSans/OpenSans-Bold.ttf);
+}
+@font-face {
+  font-family: textoDescritpivo;
+  src: url(../fuentes/static/OpenSans/OpenSans-Italic.ttf);
+}
+@media (max-width: 479px) {
+  /* cel */
+  #gridArea {
+    display: grid;
+    grid-template-areas: "header" "novedades" "elementos" "productos" "productos2" "footer ";
+    grid-template-columns: 100%;
+    grid-template-rows: auto;
+  }
+
+  body {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  header {
+    font-family: "zaha";
+    width: 100%;
+    background-color: white;
+    border-bottom: ridge 2px #ff5c58;
+    position: sticky;
+    padding-bottom: 5px;
+    top: 0px;
+    font-size: 12;
+  }
+
+  nav {
+    height: 100%;
+  }
+
+  #subTitulo {
+    display: none;
+  }
+
+  #titulo {
+    font-family: "zaha";
+    font-size: 40px;
+    font-weight: normal;
+    padding: 5px 0px 20px 48px;
+  }
+
+  .perfilFlex {
+    display: flex;
+    height: 100%;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    padding-right: 28px;
+  }
+
+  .elementos {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+  }
+
+  section h2 {
+    padding-bottom: 20px;
+  }
+
+  .flexTienda {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 100%;
+  }
+}
+/* tablet */
+@media (min-width: 480px) and (max-width: 1023px) {
+  #gridArea {
+    display: grid;
+    grid-template-areas: "header header " "novedades novedades " "elementos elementos " "productos productos " "productos2 productos2 " "footer footer ";
+    grid-template-columns: 50% 50%;
+    grid-template-rows: auto;
+  }
+
+  #subTitulo {
+    display: none;
+  }
+}
+@media (min-width: 1024px) {
+  /* pc */
+  /* se mantiene  */
+}
+#gridArea {
+  display: grid;
+  grid-template-areas: "header header " "novedades novedades " "elementos elementos " "productos productos2 " "footer footer ";
+  grid-template-columns: 50% 50%;
+  grid-template-rows: auto;
+}
+
+.header {
+  grid-area: header;
+}
+
+.novedades {
+  grid-area: novedades;
+  background-color: wheat;
+  padding-bottom: 20px;
+  padding-top: 30PX;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  margin-top: 5px;
+}
+
+.elementos {
+  grid-area: elementos;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 20px 80px 20px;
+  margin: 0% 10%;
+}
+
+.productos {
+  grid-area: productos;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.productos2 {
+  grid-area: productos2;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+/* Grid nosotros */
+#gridAreaNosotros {
+  display: grid;
+  grid-template-areas: "header" "contenido" "footer";
+  grid-template-columns: 100%;
+  grid-template-rows: auto 5fr auto;
+}
+
+.contenido {
+  grid-area: contenido;
+  justify-content: center;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.historia {
+  background-color: wheat;
+  height: 100%;
+  margin: 10px 0px 100px 0px;
+  width: 80%;
+  display: inline-block;
+}
+
+/*  grids en tienda */
+#gridAreaTienda {
+  display: grid;
+  grid-template-areas: "header" "accesorios" "lamparas" "posavaso";
+  grid-template-columns: 100%;
+  grid-template-rows: 1fr;
+  column-gap: 5%;
+}
+
+.accesorios {
+  grid-area: accesorios;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.lamparas {
+  grid-area: lamparas;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.posavaso {
+  grid-area: posavaso;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.margen {
+  margin-bottom: 5px;
+}
+
+/* grids contacto  */
+.contactoFondo {
+  background-color: wheat;
+}
+
+#gridAreaContacto {
+  display: grid;
+  grid-template-areas: "header" "form" "ubi" "tiendas" "footer";
+  grid-template-columns: 100%;
+  grid-template-rows: 1fr;
+}
+
+.form {
+  grid-area: form;
+  display: flex;
+  justify-content: center;
+  margin: 20px 0% 50px 0%;
+}
+
+.ubi {
+  grid-area: ubicacion;
+  text-align: center;
+  margin: 50px 0% 50px 0%;
+}
+
+.tiendas {
+  grid-area: tiendas;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 100px;
+}
+
+/* grids carro */
+.bordeCarrito {
+  border: #BB6464 1px solid;
+  margin: 2%;
+  display: inline-block;
+}
+
+.CarritoFlex {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+#gridAreaCarro {
+  grid-template-areas: "header" "compras" "footer";
+  grid-template-columns: 100%;
+  grid-template-rows: auto auto auto;
+}
+
+.compras {
+  grid-area: compras;
+}
+
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+header {
+  font-family: "zaha";
+  width: 100%;
+  background-color: white;
+  border-bottom: ridge 2px #ff5c58;
+  position: sticky;
+  padding-bottom: 5px;
+  top: 0px;
+  z-index: 1;
+}
+header a:hover {
+  color: salmon;
+}
+
+nav {
+  height: 100%;
+}
+
+main {
+  font-family: "zaha";
+  font-size: 15px;
+  text-align: center;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+footer {
+  font-family: "zaha";
+  font-size: 15px;
+  background-color: #BB6464;
+  border-top: ridge 2px #ff5c58;
+  height: 60px;
+  padding-top: 10px;
+}
+
+h3 {
+  font-family: "cuerpo";
+  font-size: 25px;
+}
+
+input {
+  background-color: white;
+  border: #BB6464 2px solid;
+}
+
+p {
+  font-style: italic;
+  /* Todos los parrafos son descriptivos */
+}
+
+footer {
+  grid-area: footer;
+}
+
+hr {
+  margin: 0% 20%;
+  justify-items: center;
+}
+
+section p {
+  margin: 0% 20px;
+}
+
+h4 {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.headerAnime {
+  animation-name: encabezado;
+  animation-iteration-count: 1;
+  animation-duration: 4s;
+}
+
+@keyframes encabezado {
+  from {
+    transform: translatey(-200px);
+    opacity: 0;
+  }
+  to {
+    transform: translate(0px);
+    opacity: 1;
+  }
+}
+
+/*# sourceMappingURL=destino.css.map */
